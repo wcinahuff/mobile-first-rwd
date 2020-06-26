@@ -186,6 +186,7 @@ footer span {
 
 /* Properties for mediatypes */
 
+/* Tablet-portrait properties */
 @media(min-width: 768px){
 	.main-title h3{
 		text-align: left;
@@ -213,4 +214,23 @@ footer span {
 
 	footer{
 		width: 100%;
+	}
+
+	/* Tablet-landscape properties */
+	@media(min-width: 1000px){
+		header{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+		}
+
+		header h1{
+			border-bottom: none;
+		}
+
+		header nav ul li{
+			display: flex;
+			flex-flow: row wrap;
+		}
 	}
