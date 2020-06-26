@@ -8,7 +8,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
 }
 
 .container{
@@ -17,7 +16,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap; 
+	flex-flow: row wrap;
 }
 
 h1,
@@ -53,22 +52,16 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-flow: row wrap;
-	flex-grow: 1;
+	flex-direction: column;
 }
 
 header h1 {
-	margin: 0 ;
-	padding: 38px 0;
-	text-align: left;
-	display: flex;
-}
-header h1 span {
-	color: #77a466;
+	padding: 1em 0;
+	border-bottom: 3px solid #77a466;
 }
 
-header nav {
-	padding: 46px 0;
+header h1 span {
+	color: #77a466;
 }
 
 header nav ul {
@@ -80,9 +73,13 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
+	text-align: center;
+	margin-top: 2em;
 	padding: 0 10px;
-	display: inline;
+	display: flex;
+	flex-flow: column wrap;	
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -95,16 +92,12 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
-	
-}
-
-.bottom-section{
-	border-top: 1px solid #eee;
+	flex-flow: column wrap;
 }
 
 .main-image {
 	height: auto;
+	padding: 1rem;
 	
 }
 .main-image img {
@@ -118,12 +111,13 @@ header nav ul li a{
 	
 }
 .main-title h3 {
-	text-align: left;
+	text-align: center;
 	padding: 5px 0;
+	margin: 0;
 	color: #77a466;
 }
 .main-title p {
-	padding: 0;
+	padding: 1em;
 	font-size: 1em;
 	line-height: 25px;
 }
@@ -131,17 +125,21 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 }
 
-.section-one h4 {
-	padding: 10px 0;
+.section-one{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+.section-two{
+	border-bottom: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 30px;
 }
 
 .section-two h4,
@@ -154,8 +152,8 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
-	color:#77a466;
+	padding: 10px 30px;
+	color: #77a466;
 }
 
 .reviews {
@@ -177,8 +175,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
-	flex-grow: 1;
 	font-size: 1.5em;
 }
 footer span {
