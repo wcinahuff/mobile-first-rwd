@@ -183,3 +183,34 @@ footer span {
 	color: #77a466;
 	font-size: 0.875em;
 }
+
+/* Properties for mediatypes */
+
+@media(min-width: 768px){
+	.main-title h3{
+		text-align: left;
+		padding-left: 1em;
+	}
+
+	.bottom-section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row nowrap;
+		border-top: 1px solid #eee;
+	}
+
+	.section-one{
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.section-two{
+		border-bottom: none;
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+	}
+
+	footer{
+		width: 100%;
+	}
