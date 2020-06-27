@@ -132,21 +132,12 @@ header nav ul li a{
 .section-one{
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
-<<<<<<< HEAD
 }
 
 .section-two{
 	border-bottom: 1px solid #eee;
 }
 
-=======
-}
-
-.section-two{
-	border-bottom: 1px solid #eee;
-}
-
->>>>>>> desktop-version
 .section-one h4 {
 	padding: 10px 30px;
 }
@@ -225,49 +216,28 @@ footer span {
 		width: 100%;
 	}
 
-<<<<<<< HEAD
-	/* Tablet-landscape properties */
-	@media(min-width: 1000px){
-		header{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: row;
-		}
-
-		header h1{
-			border-bottom: none;
-		}
-
-		header nav ul li{
-			display: flex;
-			flex-flow: row wrap;
-		}
-	}
-=======
 		/* Tablet-landscape properties */
-		@media(min-width: 1000px){
-			header{
-				width: 100%;
-				padding: 0%;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				flex-direction: row;
-			}
+@media(min-width: 1000px){
+	header{
+		width: 100%;
+		padding: 0%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+	}
 	
-			header h1{
-				border-bottom: none;
-				padding: 0.5em 1em 0;
-			}
+	header h1{
+		border-bottom: none;
+		padding: 0.5em 1em 0;
+	}
 	
-			header nav ul{
-				padding: 0;
-				margin-right: 0.5em;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-flow: row nowrap;
-			}
-		}
->>>>>>> desktop-version
+	header nav ul{
+		padding: 0;
+		margin-right: 0.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row nowrap;
+	}
+}
